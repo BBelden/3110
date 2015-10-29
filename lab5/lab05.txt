@@ -1,0 +1,49 @@
+﻿BIG O & JUSTIFICATION:
+Bubble sort - O(n^2)
+
+Bubble sort has two nested for loops, the outer loop executes n - 1 times, the second executes (n-1)/2. Combined, they are (n-1)((n-1)/2) = O(n^2)
+
+Selection sort - O(n^2)
+
+Selection sort has a for loop that executes n - 1 times. Within that loop, indexOfLargest is called, which has a for loop that executes up to n times. Therefore n(n - 1) = O(n^2)
+
+
+
+Insertion sort - O(n^2)
+
+Insertion sort has two nested for loops. The outer for loop executes n - 1 times, the inner loop executes up to n times. Therefore n(n - 1) =  O(n^2)
+
+Merge sort - O(n log n)
+
+Merge sort recursively halves the data each time, while the merge call will merge n items. Therefore n (log n) = O(n log n)		
+
+Quick sort - O(n^2)
+
+Quick sort recursively analyzes an array segment n - 1 times, and then decrements by one each time. Therefore n(n - 1) = O(n^2).
+
+
+DISCUSSION: 
+
+The practical growth rates will become more consistent with the theoretical growth rates as values of n get larger and larger. The theoretical growth rates above are found assuming the worst case scenario, which makes sense that the values at f(n) for each big "O" are consistently less then the theoretical.
+
+
+
+The data was calculated running the program having been compiled at -O3 with g++ on my MBP.
+DATA:
+        
+        Index	Bubble Sort	Selection sort	Insertion sort	Merge sort	Quick sort	“Algo” sort
+
+           10   0.0000005434	0.0000005256	0.0000004414	0.0000005915	0.0000005352	0.0000004586
+          100	0.0000131956	0.0000075858	0.0000030868	0.0000045865	0.0000032601	0.0000024363
+        1,000	0.000703122	0.000382525	0.000174558	0.00006344	0.000041594	0.000033549
+       10,000	0.11332705	0.03208362	0.01547752	0.00078745	0.00052593	0.00044569
+      100,000	15.1672949	3.1723225	1.5729757	0.0098112	0.0063144	0.0056649
+    1,000,000	1510.583261	317.098822	152.841653	0.11373935	0.07853848	0.06673681
+   
+   10,000,000	no data		no data		no data		1.34100867	0.8705901	0.80027623
+  
+  100,000,000	no data		no data		no data		16.1381831	9.889722	9.1359949
+
+1,000,000,000	no data		no data		no data		200.49046	117.395553	103.629254
+
+

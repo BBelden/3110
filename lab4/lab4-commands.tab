@@ -1,0 +1,31 @@
+3
+L
+D	Reed
+S	Reed	9999	reed@mtsu.com	1	History
+P	Reed
+L
+D	Reed
+P	Reed
+L
+S	Hendy	1111	hend4@mtsu.com	0	History
+S	Lamb	8888	lambB@mtsu.com	3	CSCI
+L
+D	Hendy
+L
+S	Johnson	2222	cjLittle@mtsu.com	2	English
+S	Wilson	7777	wilsonB@mtsu.com	2	History
+P	Johnson
+D	Johnson
+S	Reed	9999	reed@mtsu.com	1	History
+S	Hendy	1111	hend4@mtsu.com	0	History
+F	Johnson	2222	cjLittle@mtsu.com	English 0
+P	Johnson
+F	Edwards	3333	jedds@mtsu.com	English 1
+A	Doe	4444	jdoe3@mtsu.com	President
+A	Mann	5555	mann4@mtsu.com	Provost
+S	Will	6666	hWill@utra.com	2	History
+S	Jones	4182	sJones@jdk.com	3	English
+S	Smith	1144	SueM@mtsu.com	0	English
+S	Hall	1899	shall@lynd.net	1	History
+S	James	1044	jamesM@mtsu.com	2	History
+L
